@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "build": "mix --production",
+        "watch": "mix watch --hot",
+        "hot ": "mix watch --hot"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "vite": "^4.0.0",
+        "webpack-dev-server": "^4.13.1",
+    "react-refresh": "0.14.0",
+    "resolve-url-loader": "5.0.0",
+    "@babel/preset-react": "7.18.6",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.10",
+    "webpack-hot-middleware": "2.25.3"
+    },
+    "dependencies": {
+        "laravel-mix": "^6.0.49"
+    }
+}
