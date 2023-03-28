@@ -1,6 +1,12 @@
-// resoureces/js/app.js
+import React from 'react';
+import { render } from 'react-dom';
 
-require('./bootstrap');
+import CourseEditForm from './components/CourseEditForm';
+import { CourseContextProvider } from './CourseContext';
 
-// React Components
-require('./components/test')
+render(
+    <CourseContextProvider>
+        <CourseEditForm/>
+    </CourseContextProvider>,
+    document.getElementById('root')
+    );
