@@ -5,7 +5,7 @@ export default class courseEditForm extends Component {
     return (
       <>
       
-    <strong>This is CourseEditForm Component</strong>
+    <strong>This is  edit form component</strong>
       </>
     )
   }
