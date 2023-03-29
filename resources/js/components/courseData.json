@@ -1,0 +1,201 @@
+{
+    "course": {
+        "id": 3,
+        "instructor_id": 1,
+        "category_id": 0,
+        "instruction_level_id": 1,
+        "academy_id": 0,
+        "course_title": "maths",
+        "course_subtitle": "calculus 1",
+        "course_slug": "maths",
+        "keywords": "integration",
+        "overview": "null",
+        "course_image": null,
+        "thumb_image": null,
+        "course_video": null,
+        "duration": "null",
+        "price": "40.00",
+        "strike_out_price": "14.00",
+        "is_available_as_upsell": 0,
+        "upsell_course_commission": null,
+        "bundled_courses": "[]",
+        "upsells_courses": "[]",
+        "instructors": "[{\"instructor_id\":1}]",
+        "curriculumSorting": null,
+        "is_active": 0,
+        "created_at": "2023-03-29T09:51:31.000000Z",
+        "updated_at": "2023-03-29T09:52:26.000000Z",
+        "promo_video": null,
+        "pricings": []
+    },
+    "categories": [
+        {
+            "id": 1,
+            "name": "Development",
+            "slug": "development",
+            "icon_class": "fa-chart-line",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 2,
+            "name": "Business",
+            "slug": "business",
+            "icon_class": "fa-business-time",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 3,
+            "name": "IT & Software",
+            "slug": "IT-software",
+            "icon_class": "fa-laptop",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 4,
+            "name": "Marketing",
+            "slug": "marketing",
+            "icon_class": "fa-funnel-dollar",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 5,
+            "name": "Lifestyle",
+            "slug": "lifestyle",
+            "icon_class": "fa-heartbeat",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 6,
+            "name": "Photography",
+            "slug": "photography",
+            "icon_class": "fa-camera-retro",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 7,
+            "name": "Health & Fitness",
+            "slug": "health-fitness",
+            "icon_class": "fa-medkit",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 8,
+            "name": "Teacher Training",
+            "slug": "teacher-training",
+            "icon_class": "fa-chalkboard-teacher",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 9,
+            "name": "Music",
+            "slug": "music",
+            "icon_class": "fa-music",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        },
+        {
+            "id": 10,
+            "name": "Academics",
+            "slug": "academics",
+            "icon_class": "fa-user-graduate",
+            "is_active": 1,
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "updated_at": "2023-03-25T09:08:36.000000Z"
+        }
+    ],
+    "instruction_levels": [
+        {
+            "id": 1,
+            "level": "Introductory"
+        },
+        {
+            "id": 2,
+            "level": "Intermediate"
+        },
+        {
+            "id": 3,
+            "level": "Advanced"
+        },
+        {
+            "id": 4,
+            "level": "Comprehensive"
+        }
+    ],
+    "curriculum": [],
+    "video": null,
+    "pricings": [],
+    "contributors": [],
+    "availableToUpsell": [
+        {
+            "id": 1,
+            "instructor_id": 1,
+            "instruction_level_id": 4,
+            "course_title": "Photography - Become a Better Photographer",
+            "course_subtitle": "null",
+            "course_slug": "photography-become-a-better-photographer",
+            "course_image": "app\/course\/1\/bismillah-gaa8c4753c_1920.png",
+            "thumb_image": "app\/course\/1\/thumb_bismillah-gaa8c4753c_1920.png",
+            "price": "0.00",
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "duration": "2 days",
+            "_instructor": {
+                "id": 1,
+                "first_name": "Angela",
+                "last_name": "Yu",
+                "contact_email": "instructor@ulearn.com",
+                "instructor_image": "instructor\/1\/angela.jpg"
+            }
+        }
+    ],
+    "availableToBundle": [
+        {
+            "id": 1,
+            "instructor_id": 1,
+            "instruction_level_id": 4,
+            "course_title": "Photography - Become a Better Photographer",
+            "course_subtitle": "null",
+            "course_slug": "photography-become-a-better-photographer",
+            "course_image": "app\/course\/1\/bismillah-gaa8c4753c_1920.png",
+            "thumb_image": "app\/course\/1\/thumb_bismillah-gaa8c4753c_1920.png",
+            "price": "0.00",
+            "created_at": "2023-03-25T09:08:36.000000Z",
+            "duration": "2 days",
+            "_instructor": {
+                "id": 1,
+                "first_name": "Angela",
+                "last_name": "Yu",
+                "contact_email": "instructor@ulearn.com",
+                "instructor_image": "instructor\/1\/angela.jpg"
+            }
+        }
+    ],
+    "urls": {
+        "searchContributor": "http:\/\/127.0.0.1:8000\/manage\/course\/search-contributor",
+        "addContributor": "http:\/\/127.0.0.1:8000\/instructor\/add-contributor",
+        "courseAssetsBase": "https:\/\/s3.eu-west-2.amazonaws.com\/coursepro.today\/",
+        "saveCourse": "http:\/\/127.0.0.1:8000\/instructor\/update-course",
+        "createLecture": "http:\/\/127.0.0.1:8000\/curriculum\/lecture\/create",
+        "createSection": "http:\/\/127.0.0.1:8000\/curriculum\/section\/create",
+        "toggleLecture": "http:\/\/127.0.0.1:8000\/curriculum\/lecture\/toggle",
+        "addResource": "http:\/\/127.0.0.1:8000\/curriculum\/lecture\/add-resource"
+    },
+    "instructor_name": "Angela Yu",
+    "students_count": 0
+}

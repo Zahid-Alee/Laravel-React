@@ -30,34 +30,34 @@ class CourseContextProvider extends Component {
 
 	}
 
-	// componentDidMount = async () => {
-	// 	axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-	// 	let token = document.querySelector('input[name="_token"]');
+	componentDidMount = async () => {
+		axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+		let token = document.querySelector('input[name="_token"]');
 
-	// 	if (token) {
-	// 		axios.defaults.headers.common['X-CSRF-TOKEN'] = token.value;
-	// 	} else {
-	// 		console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-	// 	}
-	// 	this.loadCourseInfo()
-	// }
+		if (token) {
+			axios.defaults.headers.common['X-CSRF-TOKEN'] = token.value;
+		} else {
+			console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+		}
+		this.loadCourseInfo()
+	}
 
-	// async loadCourseInfo(){
-	// 	let pathParts = window.location.pathname.split('/')
-	// 	let dataURL = pathParts.slice(0,-1).join('/') +'/info/'+ pathParts.slice(-1).join('/')
-	// 	axios.get(dataURL)
-	// 	.then(res => {
-	// 		let curriculum = this.sortCurriculum(res.data?.curriculum, res.data.course.curriculumSorting)
-	// 		curriculum.forEach((section) => {
-	// 			section.lectures = this.sortCurriculum(section.lectures, section.lecturesSorting)
-	// 		})
-	// 		this.setState({ ...this.state, loading: false, ...res.data, curriculum })
-	// 		this.setSelectedCourses()
-	// 	})
-	// 	.catch(e => {
-	// 		console.log(e)
-	// 	})
-	// }
+	async loadCourseInfo(){
+		let pathParts = window.location.pathname.split('/')
+		let dataURL = pathParts.slice(0,-1).join('/') +'/info/'+ pathParts.slice(-1).join('/')
+		axios.get(dataURL)
+		.then(res => {
+			let curriculum = this.sortCurriculum(res.data?.curriculum, res.data.course.curriculumSorting)
+			curriculum.forEach((section) => {
+				section.lectures = this.sortCurriculum(section.lectures, section.lecturesSorting)
+			})
+			this.setState({ ...this.state, loading: false, ...res.data, curriculum })
+			this.setSelectedCourses()
+		})
+		.catch(e => {
+			console.log(e)
+		})
+	}
 
 	// setSelectedCourses = () => {
 	// 	function extractIDs(json){
@@ -173,7 +173,7 @@ class CourseContextProvider extends Component {
 					{this.props.children}
 				</> : <div className="course-info-loader">
 					{/* <RiLoader3Fill /> */}
-                    <strong>Loading Data</strong>
+                    <strong>Loading Data....</strong>
 					</div>}
 			</CourseContext.Provider>
 			)
