@@ -3,7 +3,7 @@ import React from 'react'
 export default function Promo() {
   return (
     <div>
-      <strong>Promo</strong>
+      <strong>This is promo</strong>
     </div>
   )
 }

@@ -38,7 +38,7 @@ export default function CourseEditForm(props) {
     }
     return (
         <>{console.log('hello forom the course edit form')}
-            <div className="border py-4 p-0 pr-4">
+            {/* <div className="border py-4 p-0 pr-4">
                 <form method="POST" className="courseForm" onSubmit={context.updateCourse} onKeyDown={preventSubmit}>
                     <div className="row mr-0">
                         <div className="site-menubar-body col-md-2 pr-0">
@@ -52,6 +52,18 @@ export default function CourseEditForm(props) {
                             </div>
                         </div>
                     </div>
+                </form>
+            </div> */}
+
+            <div>
+                <form method='POST' className='courseForm' onSubmit={context.updateCourse} onKeyDown={preventSubmit}> 
+                <div className="menuBar">
+                    <Sidebar tabs={Tabs} activeTab={tab} setTab={setTab} />
+                </div>
+                <div className="panelBody" style={{border:'2px solid black'}}>
+                <div className="tab-content" id="nav-tabContent">
+                {Tabs[tab]} </div>
+                </div>
                 </form>
             </div>
         </>
